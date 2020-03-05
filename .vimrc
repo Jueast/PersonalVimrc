@@ -85,10 +85,6 @@ let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxN']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--fields-c++=+{properties}']
-let g:gutentags_ctags_extra_args += ['-D "DEF_SMART_POINTER(type,name)=type name;using name ## Ptr = std::shared_ptr<name>;using name ## Wtr = std::weak_ptr<name>;using name ## Utr = std::unique_ptr<name>;"']
-let g:gutentags_ctags_extra_args += ['-D "DEF_OPTION(name,A,B)=enum class name {A, B};"']
-let g:gutentags_ctags_extra_args += ['-D "DEF_OPTION(name,A,B,C)=enum class name {A, B, C};"']
-let g:gutentags_ctags_extra_args += ['-D "DEF_OPTION(name,A,B,C,D)=enum class name {A, B, C, D};"']
 let g:gutentags_ctags_exclude = ['*.js', '*.json']
 
 " universal ctags 使用
